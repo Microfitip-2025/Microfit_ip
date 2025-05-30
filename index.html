@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MICROFIT_IP</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .footer {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #040041;
+  color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-links h4 {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #001441;
+  color: #eee;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.icons a:hover,
+.icons a:focus {
+  background-color: #007bff;
+  color: #dbeb00;
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7);
+  outline: none;
+}
+
+/* Responsive: icônes plus petites sur petits écrans */
+@media (max-width: 400px) {
+  .icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #001d3a;">
+     <img src="images/logo.jpg" alt="Logo MICROFIT_IP" style="height:48px; width:48px; margin-left:16px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="container">
+    
+      <a class="navbar-brand fw-bold text-warning" href="#" style="letter-spacing:2px;">MICROFIT_IP</a>
+<!-- Logo de l'entreprise -->
+
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION AVEC SLIDER -->
+  <header>
+    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image: url('images/OIP (6).jpg'); height: 90vh; background-size: cover; background-position: center;">
+            <div class="container text-center d-flex flex-column justify-content-center align-items-center h-100" style="backdrop-filter: blur(2px);">
+              <h1 class="display-3 fw-bold text-warning mb-3" style="text-shadow: 2px 2px 8px #001d3a;">MICROFIT_IP</h1>
+              <h2 class="display-6 fw-semibold text-white mb-4" style="text-shadow: 1px 1px 6px #001d3a;">Accomplissez vos rêves et vivez au cœur de la passion informatique</h2>
+              <a href="#services" class="btn btn-warning btn-lg px-4 rounded-pill shadow btn-custom">Découvrir nos services</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('images/OIP.jpg'); height: 90vh; background-size: cover; background-position: center;">
+            <div class="container text-center d-flex flex-column justify-content-center align-items-center h-100" style="backdrop-filter: blur(2px);">
+              <h1 class="display-4 fw-bold text-warning mb-3">Solutions sur mesure</h1>
+              <h2 class="display-6 fw-semibold text-white mb-4">Applications, sites web, systèmes intelligents</h2>
+              <a href="#portfolio" class="btn btn-warning btn-lg px-4 rounded-pill shadow btn-custom">Voir nos projets</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('images/OIP (2).jpg'); height: 90vh; background-size: cover; background-position: center;">
+            <div class="container text-center d-flex flex-column justify-content-center align-items-center h-100" style="backdrop-filter: blur(2px);">
+              <h1 class="display-4 fw-bold text-warning mb-3">Équipe dynamique</h1>
+              <h2 class="display-6 fw-semibold text-white mb-4">Disponible pour répondre à vos besoins</h2>
+              <a href="#portfolio" class="btn btn-warning btn-lg px-4 rounded-pill shadow btn-custom">Voir nos projets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION AVANTAGES -->
+  <section id="avantages" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Pourquoi Choisir MICROFIT_IP ?</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-users fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Équipe Expérimentée</h5>
+            <p class="small">Des experts passionnés, à l’écoute de vos besoins et à la pointe des technologies.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-rocket fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Innovation Continue</h5>
+            <p class="small">Veille technologique permanente et intégration des dernières tendances numériques.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-handshake fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Accompagnement Personnalisé</h5>
+            <p class="small">Suivi sur-mesure, conseils et support tout au long de votre projet.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-award fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Qualité & Sécurité</h5>
+            <p class="small">Des solutions fiables, testées et sécurisées pour garantir votre sérénité.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SERVICES -->
+  <section id="services" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center mb-5 fw-bold text-primary">Nos Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-laptop-code fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Développement Web</h4>
+          <p>Sites modernes, responsives et optimisés pour la performance et l'expérience utilisateur.</p>
+          <ul class="list-unstyled small text-muted">
+            <li><i class="fa fa-check text-success me-2"></i>Design sur-mesure</li>
+            <li><i class="fa fa-check text-success me-2"></i>SEO & Accessibilité</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-mobile-screen fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Applications Mobiles</h4>
+          <p>Applications Android/iOS performantes, intuitives et adaptées à vos besoins métiers.</p>
+          <ul class="list-unstyled small text-muted">
+            <li><i class="fa fa-check text-success me-2"></i>Développement natif & hybride</li>
+            <li><i class="fa fa-check text-success me-2"></i>Support & évolutivité</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-gears fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Maintenance & Support</h4>
+          <p>Assistance technique proactive pour garantir la stabilité et la sécurité de vos systèmes.</p>
+          <ul class="list-unstyled small text-muted">
+            <li><i class="fa fa-check text-success me-2"></i>Surveillance 24/7</li>
+            <li><i class="fa fa-check text-success me-2"></i>Interventions rapides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PORTFOLIO -->
+  <section id="portfolio" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Nos Réalisations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="images/logiciel.png" class="card-img-top" alt="Projet 1">
+            <div class="card-body">
+              <h5 class="card-title">Plateforme de gestion scolaire</h5>
+              <p class="card-text">Application web pour la gestion des inscriptions, notes et emplois du temps.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="images/pharma.PNG" class="card-img-top" alt="Projet 2">
+            <div class="card-body">
+              <h5 class="card-title">Application mobile santé</h5>
+              <p class="card-text">Suivi des rendez-vous médicaux et notifications personnalisées pour patients.</p>
+            </div>
+          </div>
+        </div>
+ <div class="col-md-4">
+  <div class="card shadow-sm h-100">
+    <video id="promoVideo" class="card-img-top" controls poster="images/presse-poster.jpg" style="object-fit:cover; width:100%; height:220px;">
+      <source src="images/presse.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+    <div class="card-body">
+      <h5 class="card-title">Site vitrine PME</h5>
+      <p class="card-text">Découvrez en vidéo nos solutions innovantes pour booster la croissance de votre entreprise et renforcer votre présence digitale.</p>
+    </div>
+  </div>
+</div>
+<script>
+  // Lecture de la vidéo au survol, pause à la sortie
+  const promoVideo = document.getElementById('promoVideo');
+  promoVideo.addEventListener('mouseenter', function() {
+    promoVideo.play();
+  });
+  promoVideo.addEventListener('mouseleave', function() {
+    promoVideo.pause();
+    promoVideo.currentTime = 0; // Remet au début si souhaité
+  });
+</script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FORMATIONS -->
+  <section id="formations" class="container py-5" data-aos="fade-up">
+    <h2 class="text-center mb-5 fw-bold text-primary">Nos Formations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-file-word fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Bureautique</h4>
+          <p>Maîtrisez les outils essentiels (Word, Excel, PowerPoint) pour booster votre productivité.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-globe fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Initiation Web</h4>
+          <p>Découvrez les bases du développement web et mobile pour débuter dans le numérique.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box p-4 bg-white rounded-4 shadow-sm text-center h-100">
+          <i class="fa-solid fa-code fa-2x text-warning mb-3"></i>
+          <h4 class="fw-semibold mb-2">Développement Web Avancé</h4>
+          <p>Approfondissez vos compétences en programmation et frameworks modernes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TEMOIGNAGES -->
+  <section id="temoignages" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Ils nous font confiance</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <div class="mb-2">
+              <i class="fa-solid fa-quote-left fa-2x text-warning"></i>
+            </div>
+            <p class="small">"MICROFIT_IP a transformé notre gestion interne avec une solution sur-mesure, fiable et intuitive."</p>
+            <div class="fw-bold text-primary">Fatima Oumar, Directrice d’école</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <div class="mb-2">
+              <i class="fa-solid fa-quote-left fa-2x text-warning"></i>
+            </div>
+            <p class="small">"L’équipe a su comprendre nos besoins et livrer une application mobile innovante pour nos patients."</p>
+            <div class="fw-bold text-primary">Dr. Mahamat Saleh, Clinique SantéPlus</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+            <div class="mb-2">
+              <i class="fa-solid fa-quote-left fa-2x text-warning"></i>
+            </div>
+            <p class="small">"Un accompagnement professionnel et des conseils précieux pour notre transformation digitale."</p>
+            <div class="fw-bold text-primary">Jean-Pierre N., Entrepreneur</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FAQ -->
+  <section id="faq" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Foire Aux Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Quels types de projets réalisez-vous ?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Nous réalisons des sites web, applications mobiles, logiciels métiers, solutions cloud, et accompagnons la transformation digitale des entreprises.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Proposez-vous un accompagnement après la livraison ?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Oui, nous assurons la maintenance, le support technique et la formation pour garantir la réussite de vos projets sur le long terme.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Comment obtenir un devis personnalisé ?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Contactez-nous via le formulaire ou par téléphone. Nous étudierons vos besoins et vous proposerons une offre adaptée.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION NEWSLETTER -->
+  <section id="newsletter" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Restez informé</h2>
+      <form class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="email" class="form-control rounded-start" placeholder="Votre email" required>
+            <button class="btn btn-warning rounded-end" type="submit">S'inscrire</button>
+          </div>
+        </div>
+      </form>
+      <p class="text-center mt-3 small text-muted">Recevez nos actualités, conseils et offres exclusives directement dans votre boîte mail.</p>
+    </div>
+  </section>
+
+  <!-- NOS ÉQUIPES -->
+  <section id="equipe" style="background-color: #001d3a;">
+    <div class="container py-5">
+      <h2 class="text-center text-warning mb-5 fw-bold">Notre Équipe</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4 team-member text-center">
+          <img src="images/toi.jpg" alt="Membre 1" class="rounded-circle mb-3 shadow" width="160" height="160" style="object-fit:cover;">
+          <h5 class="fw-bold text-white">Ing. ADENGSOU ADAMOU</h5>
+          <p class="text-light small">Directeur des Opérations & Chef de projets</p>
+        </div>
+        <div class="col-md-4 team-member text-center">
+          <img src="images/1.jpg" alt="Membre 2" class="rounded-circle mb-3 shadow" width="160" height="160" style="object-fit:cover;">
+          <h5 class="fw-bold text-white">Personnel</h5>
+          <p class="text-light small"></p>
+        </div>
+        <div class="col-md-4 team-member text-center">
+          <img src="images/dg.jpg" alt="Membre 3" class="rounded-circle mb-3 shadow" width="160" height="160" style="object-fit:cover;">
+          <h5 class="fw-bold text-white">Ing. Djimadoumgue Tordingaye Isaac</h5>
+          <p class="text-light small">Fondateur & Directeur Général MICROFIT_IP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUGGESTIONS PROFESSIONNELLES MODERNES -->
+  <section id="suggestions" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-primary">Suggestions Modernes pour Votre Entreprise</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-cloud-arrow-up fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Adoptez le Cloud</h5>
+            <p class="small">Modernisez votre infrastructure avec des solutions cloud pour plus de flexibilité, sécurité et évolutivité.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-shield-halved fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Renforcez la Cybersécurité</h5>
+            <p class="small">Protégez vos données et vos utilisateurs grâce à des audits réguliers, des formations et des outils de sécurité avancés.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <i class="fa-solid fa-lightbulb fa-2x text-warning mb-3"></i>
+            <h5 class="fw-semibold mb-2">Innovez avec l’IA</h5>
+            <p class="small">Intégrez l’intelligence artificielle pour automatiser vos processus et offrir de nouveaux services à forte valeur ajoutée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+ <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #06d6a0;
+      --accent: #fff;
+      --bg-dark: #edebf1;
+      --bg-light: #232946;
+      --highlight: #fcb000;
+      --gradient: linear-gradient(120deg, #a4a2cf 0%, #06d6a0 100%);
+    }
+    body {
+      font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+      background: var(--bg-dark);
+      color: var(--accent);
+      margin: 0;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    nav.navbar {
+      background-color: #18122B;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    nav.navbar .nav-link {
+      color: var(--accent);
+      margin: 0 0.5rem;
+      font-weight: 500;
+    }
+    nav.navbar .nav-link:hover {
+      color: var(--highlight);
+    }
+    .hero {
+      min-height: 90vh;
+      /*background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437b2?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding-top: 80px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(31, 38, 135, 0.45);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      background: rgba(24, 18, 43, 0.85);
+      border-radius: 24px;
+      padding: 3rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--highlight);
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #e0e0e0;
+      margin-bottom: 2rem;
+    }
+    .hero-content .btn {
+      font-size: 1.1rem;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      background: var(--gradient);
+      border: none;
+      color: #232946;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .hero-content .btn:hover {
+      background: linear-gradient(90deg, var(--secondary), var(--primary));
+      color: var(--highlight);
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--gradient);
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+    .about-section, .services-section, .contact-section {
+      background: var(--bg-light);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      margin: 3rem auto;
+      max-width: 960px;
+    }
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: #1d1b3a;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .service-card:hover {
+      background: var(--gradient);
+      transform: translateY(-5px);
+      color: #232946;
+    }
+    .service-card i {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+    .service-card h4 {
+      color: var(--highlight);
+      margin-bottom: 1rem;
+    }
+    .contact-section form {
+      background: #2d2a4d;
+      padding: 2rem;
+      border-radius: 16px;
+    }
+    .contact-section label {
+      font-weight: 600;
+      color: var(--highlight);
+    }
+    .contact-section input, .contact-section textarea {
+      background: #1d1b3a;
+      color: #f3cf00;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .contact-section button {
+      background: var(--gradient);
+      color: #232946;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .contact-section button:hover {
+      background: linear-gradient(90deg, var(--secondary), var(--primary));
+      color: var(--highlight);
+    }
+    footer {
+      background: #18122B;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+  </style>
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Nous sécurisons votre avenir numérique</h1>
+      <p>Experts en développement logiciel & cybersécurité pour entreprises ambitieuses.</p>
+      <a href="#contact" class="btn">Contactez-nous</a>
+    </div>
+  </section>
+  <section class="about-section" id="about">
+    <h2 class="section-title">À propos de MICROFIT_IP</h2>
+    <p class="text-center">MICROFIT_IP conçoit des solutions logicielles sur mesure et accompagne les entreprises dans leur transformation numérique, avec une expertise forte en cybersécurité.</p>
+  </section>
+
+  <section class="services-section" id="services">
+    <h2 class="section-title">Nos Services</h2>
+    <div class="services-list">
+      <div class="service-card" data-aos="zoom-in">
+        <i class="fas fa-code"></i>
+        <h4>Développement Logiciel</h4>
+        <p>Applications Web & Mobile, API, automatisation, cloud.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Cybersécurité</h4>
+        <p>Audit, Pentesting, conformité RGPD, ISO 27001, SOC, gouvernance.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-brain"></i>
+        <h4>Conseil & Formation</h4>
+        <p>Veille technologique, formations sécurité, accompagnement DPO.</p>
+      </div>
+    </div>
+  </section>
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <form id="contactForm" action="https://formspree.io/f/mpwrapoa" method="POST">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="nom" name="nom" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    <p id="confirmationMessage" style="margin-top: 10px;"></p>
+  </form>
+</section>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+    const confirmation = document.getElementById('confirmationMessage');
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        const messages = [
+          "Merci pour votre message ! Nous vous répondrons bientôt.",
+          "Votre message a bien été envoyé.",
+          "Nous avons bien reçu votre demande.",
+          "Merci ! Nous traiterons votre message rapidement.",
+          "Votre prise de contact est enregistrée.",
+          "Message reçu avec succès.",
+          "Nous reviendrons vers vous sous peu.",
+          "Merci pour votre intérêt.",
+          "Formulaire soumis avec succès.",
+          "Nous vous contacterons dans les plus brefs délais."
+        ];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        confirmation.style.color = "green";
+        confirmation.textContent = randomMessage;
+        form.reset();
+      } else {
+        response.json().then(data => {
+          confirmation.style.color = "red";
+          confirmation.textContent = data.error || "Erreur lors de l'envoi du message.";
+        });
+      }
+    })
+    .catch(error => {
+      confirmation.style.color = "red";
+      confirmation.textContent = "Erreur réseau ou serveur lors de l'envoi.";
+    });
+  });
+</script>
+
+
+
+  <!-- Ajout d'un bouton de suggestion flottant -->
+  <style>
+    #suggestionBtn {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      z-index: 1050;
+      background: #ffc107;
+      color: #001d3a;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    #suggestionBtn:hover {
+      background: #ffdb58;
+      color: #001d3a;
+    }
+  </style>
+  <button id="suggestionBtn" title="Voir nos suggestions"><i class="fa-solid fa-lightbulb"></i></button>
+  <script>
+    document.getElementById('suggestionBtn').onclick = function() {
+      document.getElementById('suggestions').scrollIntoView({behavior: 'smooth'});
+    };
+  </script>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Carousel JS pour la navigation automatique
+    var myCarousel = document.querySelector('#carouselHero');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000, // Temps entre chaque slide (en ms)
+      ride: 'carousel'
+    });
+  </script>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="footer">
+ 
+  
+  <div class="social-links">
+    <h4>Suivez-nous sur :</h4>
+    <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=100086550049489" target="_blank" title="Facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" target="_blank" title="Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/107016241" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#" target="_blank" title="Twitter" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank" title="YouTube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      
+    </div>
+     <p>&copy; 2025 MICROFIT_IP. Tous droits réservés.</p>
+  </div>
+</footer>
+
+   
+</body>
+</html>
